@@ -4,8 +4,8 @@ from funcoes import *
 # Dev: Termometro (sensor: temperatura)
 # Dev: Ventilador
 # Dev: Celular
-temperatura = 0 # Inicialização automática
 potencia = 0 # Inicialização automática
+temperatura = 0 # Inicialização automática
 
 limite = 35
 temperatura = 40

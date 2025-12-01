@@ -1,5 +1,3 @@
-# Funções exigidas no trabalho 
-
 def ligar(id_device):
     print(f"{id_device} ligado!")
 
@@ -11,8 +9,7 @@ def alerta(id_device, msg, var=None):
     if var is None:
         print(msg)
     else:
-        # Concatenação com espaço em branco
-        print(f"{msg} {var}") 
+        print(f"{msg} {var}")  #concatenação com espaço em branco
 
 def difundir(lista_devices, msg, var=None):
     for dev in lista_devices:
