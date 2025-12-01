@@ -1,0 +1,17 @@
+dispositivos :
+    Lampada
+    ArCondicionado [temperatura]
+    Janela [chuva]
+    Sensor [luminosidade]
+fimdispositivos
+
+def temperatura = 28;
+def luminosidade = 10;
+def chuva = TRUE;
+
+quando temperatura > 25 AND chuva == TRUE : execute ligar em ArCondicionado;
+
+quando luminosidade > 50 : 
+    execute desligar em Lampada
+senao 
+    alerta para Lampada : "Ambiente escuro, nivel:", luminosidade;

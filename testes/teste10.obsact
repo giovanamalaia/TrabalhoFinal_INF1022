@@ -1,0 +1,15 @@
+dispositivos :
+    Termometro [temperatura]
+    Ventilador [potencia]
+    Celular
+fimdispositivos
+
+def temperatura = 35;
+def potencia = 0;
+
+quando temperatura > 30 AND potencia == 0 : execute ligar em Ventilador;
+
+quando temperatura < 20 : 
+    execute desligar em Ventilador 
+senao 
+    alerta para Celular : "Temperatura segue alta:", temperatura;
