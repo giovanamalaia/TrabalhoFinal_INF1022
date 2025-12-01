@@ -83,8 +83,18 @@ class ObsActParser(Parser):
     def obs(self, p):
         return f"{p.ID} {p.OPLOGIC} {p.val} and {p.obs}"
 
-    # VAL -> NUM | BOOL
-    @_('NUM', 'BOOL_VAL')
+    # # VAL -> NUM | BOOL
+    # @_('NUM', 'BOOL_VAL')
+    # def val(self, p):
+    #     valor = str(p[0])
+    #     if valor == 'TRUE':
+    #         return 'True'
+    #     elif valor == 'FALSE':
+    #         return 'False'
+    #     return valor
+
+    # VAL -> NUM | BOOL | ID  
+    @_('NUM', 'BOOL_VAL', 'ID')
     def val(self, p):
         valor = str(p[0])
         if valor == 'TRUE':
@@ -95,6 +105,11 @@ class ObsActParser(Parser):
 
     # ACT -> execute ACTION em ID DEVICE
     @_('EXECUTE action EM ID')
+    def act(self, p):
+        return f'{p.action}("{p.ID}")'
+    
+    # adicionamos: Aceita sem o 'em' 
+    @_('EXECUTE action ID')
     def act(self, p):
         return f'{p.action}("{p.ID}")'
 

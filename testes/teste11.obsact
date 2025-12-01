@@ -1,0 +1,15 @@
+dispositivos :
+    Termometro [temperatura]
+    Ventilador
+    Celular
+fimdispositivos
+
+def limite = 35;
+def temperatura = 40;
+
+quando temperatura > limite : 
+    alerta para Celular : "Limite variavel excedido!", temperatura;
+
+def alvo = 40;
+quando temperatura == alvo : 
+    execute ligar em Ventilador;
