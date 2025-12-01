@@ -1,4 +1,4 @@
-# Funções de suporte exigidas no trabalho (seção 1.3 do PDF)
+# Funções exigidas no trabalho 
 
 def ligar(id_device):
     print(f"{id_device} ligado!")
@@ -11,10 +11,9 @@ def alerta(id_device, msg, var=None):
     if var is None:
         print(msg)
     else:
-        # Requisito do PDF: Concatenação com espaço em branco
+        # Concatenação com espaço em branco
         print(f"{msg} {var}") 
 
-# Adicione aqui funções extras se precisar implementar o 'difundir'
 def difundir(lista_devices, msg, var=None):
     for dev in lista_devices:
         alerta(dev, msg, var)
