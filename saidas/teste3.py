@@ -5,10 +5,10 @@ from funcoes import *
 # Dev: Celular (sensor: movimento)
 # Dev: Higrometro (sensor: umidade)
 # Dev: Lampada (sensor: potencia)
-temperatura = 0 # Inicialização automática
-potencia = 0 # Inicialização automática
-movimento = 0 # Inicialização automática
 umidade = 0 # Inicialização automática
+movimento = 0 # Inicialização automática
+potencia = 0 # Inicialização automática
+temperatura = 0 # Inicialização automática
 
 potencia = 100
 if umidade < 30:

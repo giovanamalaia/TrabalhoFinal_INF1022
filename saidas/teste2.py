@@ -4,8 +4,8 @@ from funcoes import *
 # Dev: Monitor
 # Dev: Celular
 # Dev: Termometro (sensor: temperatura)
-temperatura = 0 # Inicialização automática
 potencia = 0 # Inicialização automática
+temperatura = 0 # Inicialização automática
 
 if temperatura > 30:
     difundir(['Monitor', 'Celular'], "Temperatura em ", temperatura)
