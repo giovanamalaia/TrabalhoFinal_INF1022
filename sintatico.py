@@ -1,3 +1,6 @@
+# Giovana Malaia Pinheiro - 2312080
+# Gabriele Sequeira - 2310202
+
 from sly import Parser
 from lexico import ObsActLexer
 
