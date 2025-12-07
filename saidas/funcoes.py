@@ -1,3 +1,7 @@
+# Giovana Malaia Pinheiro - 2312080
+# Gabriele Sequeira - 2310202
+
+
 def ligar(id_device):
     print(f"{id_device} ligado!")
 

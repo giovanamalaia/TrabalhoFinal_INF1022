@@ -1,0 +1,9 @@
+dispositivos:
+    Monitor
+    Celular
+fimdispositivos
+
+def status = 1;
+
+quando status != 0 :
+    difundir : "Alerta Geral sem variavel" -> [Monitor, Celular];

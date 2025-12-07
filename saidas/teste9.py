@@ -5,12 +5,12 @@ from funcoes import *
 # Dev: ArCondicionado (sensor: temperatura)
 # Dev: Janela (sensor: chuva)
 # Dev: Sensor (sensor: luminosidade)
-chuva = 0 # Inicialização automática
-umidade = 0 # Inicialização automática
-temperatura = 0 # Inicialização automática
 movimento = 0 # Inicialização automática
-potencia = 0 # Inicialização automática
+umidade = 0 # Inicialização automática
 luminosidade = 0 # Inicialização automática
+chuva = 0 # Inicialização automática
+temperatura = 0 # Inicialização automática
+potencia = 0 # Inicialização automática
 
 temperatura = 28
 luminosidade = 10
